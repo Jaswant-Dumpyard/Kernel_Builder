@@ -27,8 +27,8 @@ jobs:
     steps:
       - name: Initializing environment
         run: |
-          git config --global user.name "sarthakroy2002"
-          git config --global user.email "sarthakroy2002@gmail.com"
+          git config --global user.name "JaswantTeja"
+          git config --global user.email "sunnyteja201@gmail.com"
           df -h
           ld --version
           gcc -v
@@ -41,5 +41,5 @@ jobs:
         run: |
           git clone $REPO -b $BRANCH kernel 
           cd kernel
-          wget https://raw.githubusercontent.com/sarthakroy2002/Scripts/main/Kernel%20Scripts/C3_build_script.sh
-          bash C3_build_script.sh
+          wget https://raw.githubusercontent.com/JaswantTeja/my-scripts/main/r5x_kernel-build.sh
+          bash r5x_kernel-build.sh
