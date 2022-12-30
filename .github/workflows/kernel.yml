@@ -11,12 +11,15 @@ on:
           required: true
       branch:
           description: 'Kernel source branch'
-          required: true   
-
+          required: true
+      defconfig:
+          description: 'Kernel Def-Config'
+          required: true
 env:
   TZ: Asia/Kolkata
   REPO: ${{ github.event.inputs.repo }}
   BRANCH: ${{ github.event.inputs.branch }}
+  DEFCONFIG: ${{ github.event.inputs.defconfig }}
   token: ${{ secrets.TOKEN }}
   chat_id: ${{ secrets.CHAT_ID }}
 
